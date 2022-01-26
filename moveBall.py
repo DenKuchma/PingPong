@@ -1,3 +1,8 @@
+import time
+import os
+import pynput
+
+
 WIDTH = 30
 HEIGHT = 10
 ballX = 5
@@ -30,3 +35,8 @@ def moveBall():
     
     ballX += dirX
     ballY += dirY
+
+while True:
+    os.system('cls')
+    moveBall()
+    time.sleep(0.1/2)
